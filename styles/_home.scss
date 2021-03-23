@@ -17,6 +17,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  
 
   ul {
     display: flex;
@@ -25,7 +26,7 @@ nav {
     list-style: none;
   }
   #logo {
-    flex: 3;
+    flex: 4;
     position: relative;
     &::after {
       content: "";
