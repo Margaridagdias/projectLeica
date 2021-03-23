@@ -16,14 +16,11 @@
 .features {
   min-height: 90vh;
   width: 80%;
-  margin-left: 5%;
-  margin-top: 3rem;
-  padding-bottom: 10rem;
+  margin: auto;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   .cards {
-    margin: auto;
     display: flex;
     justify-content: space-between;
     color: black;
@@ -47,5 +44,3 @@
     }
   }
 }
-
-

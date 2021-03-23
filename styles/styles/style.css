@@ -116,12 +116,13 @@ nav .order {
 }
 
 .showcase {
- 
+  display: -ms-grid;
   display: grid;
   min-height: 90vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[3] 10%;
       grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
-          perspective: 500px;
 }
 
 .showcase h2 {
@@ -130,17 +131,16 @@ nav .order {
   grid-column: 2/3;
   -ms-flex-item-align: end;
       align-self: flex-end;
-  margin-bottom: 5rem;
 }
 
-.showcase .animation {
+.showcase img {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
-  height: 150%;
+  height: 110%;
   -o-object-fit: cover;
      object-fit: cover;
   -ms-flex-item-align: center;
@@ -148,8 +148,6 @@ nav .order {
       align-self: center;
   -ms-grid-column-align: center;
       justify-self: center;
-  -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
 }
 
 .showcase .info {
@@ -162,11 +160,7 @@ nav .order {
 }
 
 .showcase .info h3 {
-  padding-bottom: 2rem;
-}
-
-.camera {
-  cursor: pointer;
+  padding-bottom: 3rem;
 }
 
 .features-container {
@@ -187,9 +181,7 @@ nav .order {
 .features {
   min-height: 90vh;
   width: 80%;
-  margin-left: 5%;
-  margin-top: 3rem;
-  padding-bottom: 10rem;
+  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -202,7 +194,6 @@ nav .order {
 }
 
 .features .cards {
-  margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -263,12 +254,6 @@ nav .order {
 
 .soon h2 {
   top: 25%;
-  font-size: 7rem;
-}
-
-.soon .soon-camera {
-  height: 45rem;
-  width: 45rem;
 }
 
 footer {
