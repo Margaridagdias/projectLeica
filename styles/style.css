@@ -205,6 +205,7 @@ nav .order {
 }
 
 .features .cards {
+  top: 10%;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -265,13 +266,18 @@ nav .order {
 }
 
 .soon h2 {
-  top: 25%;
+  top: 26%;
   font-size: 7rem;
 }
 
 .soon .soon-camera {
-  height: 58rem;
-  width: 58rem;
+  height: 55rem;
+  width: 55rem;
+}
+
+.soon .circle {
+  width: 55rem;
+  height: 55rem;
 }
 
 footer {
