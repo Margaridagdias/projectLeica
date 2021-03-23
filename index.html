@@ -8,6 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>One UI Color</title>
   </head>
   <body>
@@ -23,12 +24,12 @@
       </div>
       <section class="home">
         <div class="showcase">
-          <h2>Leica M6</h2>
+          <h2 data-aos="fade-right">Leica M6</h2>
           <div class="animation">
               <img class="camera" src="./img/camera 1.png" alt="camera"> 
         </div>
           <div class="info">
-            <h3>Small but powerful.</h3>
+            <h3  data-aos="fade-left">Small but powerful.</h3>
             <p>
               The new Leica M6 offers 4k at 60fps, Raw Video & Full Frame
               Sensor.
@@ -39,7 +40,7 @@
       <div class="features-container">
         <section class="features">
           <h2>Features</h2>
-          <div class="cards">
+          <div  data-aos="fade-up" class="cards">
             <div class="card">
               <img src="./img/card1.png" alt="" />
               <h4>4k 60fps</h4>
@@ -67,7 +68,7 @@
         <img class="circle" src="./img/circle.png" alt="" />
       </section>
       <footer>
-        <h1>Leica 2020</h1>
+        <h1>Leica 2021</h1>
         <ul>
           <li>
             <a href="#"><img src="./img/yt-logo.png" alt="" /></a>
@@ -82,5 +83,9 @@
       </footer>
     </main>
     <script src="./app.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

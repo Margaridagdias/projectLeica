@@ -116,11 +116,14 @@ nav .order {
 }
 
 .showcase {
- 
+  display: -ms-grid;
   display: grid;
   min-height: 90vh;
+  -ms-grid-columns: 10% (minmax(5rem, 1fr))[3] 10%;
       grid-template-columns: 10% repeat(3, minmax(5rem, 1fr)) 10%;
+  -ms-grid-rows: 1fr 2fr 1fr;
       grid-template-rows: 1fr 2fr 1fr;
+  -webkit-perspective: 500px;
           perspective: 500px;
 }
 
@@ -267,8 +270,8 @@ nav .order {
 }
 
 .soon .soon-camera {
-  height: 45rem;
-  width: 45rem;
+  height: 58rem;
+  width: 58rem;
 }
 
 footer {
